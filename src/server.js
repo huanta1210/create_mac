@@ -58,7 +58,7 @@ const zaloNotify = async (res, req) => {
 
     const reqMac = CryptoJS.HmacSHA256(
       str,
-      process.env.ZALO_CHECKOUT_SECRET_KEY
+      process.env.ZALO_CHECKOUT_SECRET_KEY1
     ).toString();
 
     if (reqMac == mac) {
