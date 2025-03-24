@@ -26,7 +26,7 @@ const createMac = (req, res) => {
 
     const mac = CryptoJS.HmacSHA256(
       dataMac,
-      process.env.ZALO_CHECKOUT_SECRET_KEY
+      process.env.ZALO_CHECKOUT_SECRET_KEY1
     ).toString();
 
     res.json({ mac });
